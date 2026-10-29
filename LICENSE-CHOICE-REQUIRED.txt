@@ -1,0 +1,14 @@
+LICENSE CHOICE REQUIRED — THIS IS NOT A LICENSE
+必须选择许可证——本文件不是许可证
+
+This package intentionally has no LICENSE file. No license, waiver, or grant of rights is made by this notice. Before any public repository or distribution, the owner must choose the applicable license terms and separately approve release.
+
+本包有意不包含 LICENSE 文件。本提示不构成任何许可证、权利放弃或授权。在创建公开仓库或分发之前，所有者必须自行选择适用的许可证条款，并另行批准发布。
+
+Owner decision required / 待所有者决定：
+- Select the license terms, or explicitly decide to distribute without an open-source license. / 选择许可证条款，或明确决定不附开源许可证进行分发。
+- Review the complete package and approve or decline public release. / 审阅完整软件包，并批准或拒绝公开发布。
+
+Do not rename this notice to LICENSE and do not treat it as permission to use, modify, or redistribute the package.
+
+不得将本提示改名为 LICENSE，也不得将其视为使用、修改或再分发本包的许可。
