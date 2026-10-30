@@ -8,6 +8,15 @@ This bilingual Agent Skill helps an assistant plan proportionate single- or mult
 
 The Skill focuses on deliverables, hard requirements, verified host capabilities, human decisions, privacy, external-action authorization, validation, and stopping conditions. It preserves a light path for bounded, low-risk work and a full path for complex, risky, or multi-stage work.
 
+## Repository layout
+
+- `.github/skills/multi-agent-workflow-planner/SKILL.md` — concise bilingual core rules and safety gates.
+- `.github/skills/multi-agent-workflow-planner/references/platform-capability-examples.md` — dated, source-bounded platform documentation; not runtime test results.
+- `.github/skills/multi-agent-workflow-planner/references/research-claim-boundaries.md` — evidence limits for claims about agent counts, topologies, or collaboration effectiveness.
+- `.github/skills/multi-agent-workflow-planner/references/workflow-templates.md` — optional task, work-unit, change, and handoff forms.
+- `.github/skills/multi-agent-workflow-planner/references/behavior-checks.md` — optional behavior-test prompts; prompts are not evidence that tests were run.
+- `LICENSE-CHOICE-REQUIRED.txt` — pending decision notice, not a license.
+
 ## Install or import
 
 1. The installable Skill is in `.github/skills/multi-agent-workflow-planner/`. Keep its `SKILL.md` and adjacent `references/` directory together because it uses relative links. The README and license notice remain at the package root.

@@ -8,6 +8,16 @@ Every entry gives the page's actual title, source type, page-stated publication/
 
 每个条目均列出页面原文标题、来源类型、页面注明的发布日期/更新时间/版本（或明确注明页面未注明日期）、查阅日期、来源明确支持的主张及来源不能证明的事项。**所有条目的查阅日期：2026-10-30。**
 
+## Contents / 目录
+
+- [Skill format and host-specific installation / Skill 格式与宿主专属安装](#skill-format-and-host-specific-installation--skill-格式与宿主专属安装)
+- [Cue and Manus: keep public claims narrow / Cue 与 Manus：限定公开主张范围](#cue-and-manus-keep-public-claims-narrow--cue-与-manus限定公开主张范围)
+- [Grok Bot / Grok Bot 产品](#grok-bot--grok-bot-产品)
+- [Grok Build and xAI API / Grok Build 与 xAI API](#grok-build-and-xai-api--grok-build-与-xai-api)
+- [Claude Code Agent Teams / Claude Code Agent Teams](#claude-code-agent-teams--claude-code-agent-teams)
+- [OpenAI Agents SDK / OpenAI Agents SDK](#openai-agents-sdk--openai-agents-sdk)
+- [Evidence boundary / 证据边界](#evidence-boundary--证据边界)
+
 ## Skill format and host-specific installation / Skill 格式与宿主专属安装
 
 ### Agent Skills format / Agent Skills 格式

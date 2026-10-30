@@ -8,6 +8,14 @@ For every entry, the date field reflects the cited page or version record—not 
 
 每个条目的日期字段均来自所引页面或版本记录，而非内部备注。**所有条目的查阅日期：2026-10-30。**
 
+## Contents / 目录
+
+- [Vendor engineering guidance / 厂商工程指南](#vendor-engineering-guidance--厂商工程指南)
+- [Vendor-reported systems and experiments / 厂商报告的系统与实验](#vendor-reported-systems-and-experiments--厂商报告的系统与实验)
+- [Google Research, Nature, and arXiv: keep versions separate / Google Research、Nature 与 arXiv：分开版本](#google-research-nature-and-arxiv-keep-versions-separate--google-researchnature-与-arxiv分开版本)
+- [Topology-specific papers and repeated sampling / 特定拓扑论文与重复采样](#topology-specific-papers-and-repeated-sampling--特定拓扑论文与重复采样)
+- [Safe planning conclusions / 稳妥的规划结论](#safe-planning-conclusions--稳妥的规划结论)
+
 ## Vendor engineering guidance / 厂商工程指南
 
 ### OpenAI — building-agent guide / OpenAI——Agent 构建指南

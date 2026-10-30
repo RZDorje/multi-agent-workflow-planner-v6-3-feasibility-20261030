@@ -8,6 +8,15 @@
 
 本 Skill 关注交付物、硬性要求、已核实的宿主能力、人类决策、隐私、外部行动授权、核验和停止条件。对边界清楚、低风险的任务保留轻量流程；对复杂、高风险或多阶段任务采用完整流程。
 
+## 仓库结构
+
+- `.github/skills/multi-agent-workflow-planner/SKILL.md` — 简明的双语核心规则与安全门槛。
+- `.github/skills/multi-agent-workflow-planner/references/platform-capability-examples.md` — 有日期且受来源范围限定的平台文档；不是运行时测试结果。
+- `.github/skills/multi-agent-workflow-planner/references/research-claim-boundaries.md` — 关于 Agent 数量、拓扑或协作效能主张的证据限制。
+- `.github/skills/multi-agent-workflow-planner/references/workflow-templates.md` — 可选的任务、工作单元、变更和交接表单。
+- `.github/skills/multi-agent-workflow-planner/references/behavior-checks.md` — 可选的行为测试提示；提示不代表测试已运行。
+- `LICENSE-CHOICE-REQUIRED.txt` — 等待所有者决定的提示，不是许可证。
+
 ## 安装或导入
 
 1. 可安装的 Skill 位于 `.github/skills/multi-agent-workflow-planner/`。请将其中的 `SKILL.md` 与相邻的 `references/` 目录放在一起，因为 Skill 使用相对链接。README 和许可证提示保留在软件包根目录。
