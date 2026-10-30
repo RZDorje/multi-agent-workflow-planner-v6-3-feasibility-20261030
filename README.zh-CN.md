@@ -28,4 +28,4 @@ Skill 仅提供指令和随附参考资料。每项任务都应核实当前宿�
 
 ## 许可证与发布门槛
 
-本软件包尚未选择许可证；详见 [`LICENSE-CHOICE-REQUIRED.txt`](LICENSE-CHOICE-REQUIRED.txt)。目前本包保存在私有可行性测试仓库中，尚未公开发布。分发前，所有者必须选择适用条款并另行批准发布。本次 README 本地化不选择许可证，也不授权公开发布。
+本软件包尚未选择许可证；详见 [`LICENSE-CHOICE-REQUIRED.txt`](LICENSE-CHOICE-REQUIRED.txt)。仓库目前公开可查看；尚未选择许可证，也未发布带版本的发行包。分发前，所有者必须选择适用条款并另行批准发布。本次 README 本地化不选择许可证，也不授权公开发布。

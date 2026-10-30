@@ -28,4 +28,4 @@ A Skill provides instructions and bundled references only. Check the active host
 
 ## License and release gate
 
-This package has no selected license; see [`LICENSE-CHOICE-REQUIRED.txt`](LICENSE-CHOICE-REQUIRED.txt). It is held in a private feasibility repository and has not been publicly released. Before any distribution, the owner must choose the applicable terms and separately approve release. This README localization does not select a license or authorize public release.
+This package has no selected license; see [`LICENSE-CHOICE-REQUIRED.txt`](LICENSE-CHOICE-REQUIRED.txt). The repository is currently publicly viewable; no license has been selected, and no versioned release has been published. Before any distribution, the owner must choose the applicable terms and separately approve release. This README localization does not select a license or authorize public release.
