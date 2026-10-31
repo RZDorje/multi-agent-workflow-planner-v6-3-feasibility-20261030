@@ -1,6 +1,6 @@
 [简体中文](README.zh-CN.md)
 
-# Multi-Agent Workflow Planner
+# Multi-Agent Workflow Planner v6.5
 
 This bilingual Agent Skill helps an assistant plan proportionate single- or multi-agent workflows. v6.5 adds a concise, traceable current-state card for optional use in multi-phase/shared work; requires phase transitions and resumptions to refresh the state against original instructions and applicable rules; clarifies that the accountable coordinator may also handle a low-conflict work unit; and records bounded evidence about context, verification, coordination patterns, and role prompts. It provides instructions and references; it is not a platform integration and does not itself create agents, tools, permissions, background jobs, or runtime behavior.
 
@@ -21,7 +21,7 @@ The Skill focuses on deliverables, hard requirements, verified host capabilities
 
 ## Future install or import (instructions only)
 
-1. The Skill files are in `.github/skills/multi-agent-workflow-planner/`. Keep its `SKILL.md` and adjacent `references/` directory together if an owner later chooses to import it, because it uses relative links. This v6.5 local draft has not been installed or loaded in a host. The README and license notice remain at the package root.
+1. The Skill files are in `.github/skills/multi-agent-workflow-planner/`. Keep its `SKILL.md` and adjacent `references/` directory together if an owner later chooses to import it, because it uses relative links. A v6.5 bilingual candidate was assigned to one exploratory Cue screen group; the visible group transcript did not show the selected package hash or per-turn Skill activation. This does not confirm that the package was loaded or establish runtime behavior. The README and license notice remain at the package root.
 2. In the GitHub Copilot project context documented by GitHub, `.github/skills/multi-agent-workflow-planner/` is a documented discovery path. Follow the active host's documentation for import steps and supported locations. The [Agent Skills format specification](https://agentskills.io/specification) describes the file format, while [GitHub's guide to adding agent skills for Copilot](https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/add-skills) describes only GitHub-specific locations and CLI behavior. GitHub paths are not universal Agent Skills requirements.
 3. For any later import, confirm that the active host loaded the Skill and that its relative reference links resolve. Importing a Skill does not grant the host new features or permissions.
 

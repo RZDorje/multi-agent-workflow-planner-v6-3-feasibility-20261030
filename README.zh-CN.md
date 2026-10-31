@@ -1,6 +1,6 @@
 [English](README.md)
 
-# 多 Agent 工作流程规划器
+# 多 Agent 工作流程规划器 v6.5
 
 这是一款双语 Agent Skill，帮助助手规划适度的单 Agent 或多 Agent 工作流程。v6.5 新增用于多阶段/共享工作的可选简短可回查状态卡；要求阶段切换或重新接手时依据原始指示和适用规则刷新状态；明确可问责协调者也可兼任低冲突工作单元；并记录关于上下文、验证、协调模式和角色提示的有边界证据。它提供指令和参考资料，并非平台集成；不会自行创建 Agent、工具、权限、后台任务或运行时行为。
 
@@ -21,7 +21,7 @@
 
 ## 后续安装或导入（仅为说明）
 
-1. Skill 文件位于 `.github/skills/multi-agent-workflow-planner/`。若所有者之后决定导入，请将其中的 `SKILL.md` 与相邻的 `references/` 目录放在一起，因为 Skill 使用相对链接。此 v6.5 本地草稿尚未安装或加载到任何宿主。README 和许可证提示保留在软件包根目录。
+1. Skill 文件位于 `.github/skills/multi-agent-workflow-planner/`。若所有者之后决定导入，请将其中的 `SKILL.md` 与相邻的 `references/` 目录放在一起，因为 Skill 使用相对链接。v6.5 双语候选曾被分配到一个探索性 Cue 筛查群；可见群记录未显示实际选择的软件包哈希或逐轮 Skill 激活情况。因此不能确认该包已加载，也不能据此判断运行时表现。README 和许可证提示保留在软件包根目录。
 2. 在 GitHub 文档说明的 Copilot 项目场景中，`.github/skills/multi-agent-workflow-planner/` 是一种文档所述的发现路径。导入步骤和支持的位置应以当前宿主的文档为准。[Agent Skills 格式规范](https://agentskills.io/specification)说明文件格式；[GitHub 添加 Copilot Agent Skills 指南](https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/add-skills)仅说明 GitHub 专属路径和 CLI 行为。GitHub 路径并非通用 Agent Skills 要求。
 3. 若之后导入，应确认当前宿主已加载该 Skill，且其相对参考链接均可访问。导入 Skill 不会赋予宿主新的功能或权限。
 
