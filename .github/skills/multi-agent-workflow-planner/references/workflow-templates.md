@@ -89,3 +89,29 @@ Resume condition or stop point:
 已执行 / 未执行的外部行动：
 恢复条件或停止点：
 ```
+
+## Current-state card / 当前状态卡
+
+Use this only when a multi-phase handoff or shared work benefits from a compact, traceable state. It is optional; skip it for simple tasks. Link each item to the full instruction, decision, or evidence it summarizes. If the card conflicts with the user's original instruction or applicable formal rules, follow those and correct the card; never omit an important qualification merely to keep the card short. When a phase changes or work resumes, reread applicable rules and full instructions before refreshing the card.
+
+仅当多阶段交接或共享工作能从简短、可回查的状态记录中受益时使用；它是可选的，简单任务可跳过。每项都链接到其概括的完整指令、决定或证据。若状态卡与用户原始指示或适用的正式规则冲突，应遵循原指示/规则并修正状态卡；不得为追求简短而省略重要限定。阶段切换或重新接手时，先重读适用规则和完整指令，再刷新状态卡。
+
+```text
+Goal:
+Hard constraints / permissions:
+Decisions and rationale:
+Task — accountable owner — status — dependencies:
+Open items / unknowns:
+Stop point / resume condition:
+Full instruction and evidence links:
+```
+
+```text
+目标：
+硬约束 / 权限：
+决定及理由：
+任务 — 可问责负责人 — 状态 — 依赖：
+未决项 / 未知项：
+停止点 / 恢复条件：
+完整指令与证据链接：
+```

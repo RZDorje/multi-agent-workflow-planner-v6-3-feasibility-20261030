@@ -12,6 +12,7 @@ For every entry, the date field reflects the cited page or version record—not 
 
 - [Vendor engineering guidance / 厂商工程指南](#vendor-engineering-guidance--厂商工程指南)
 - [Vendor-reported systems and experiments / 厂商报告的系统与实验](#vendor-reported-systems-and-experiments--厂商报告的系统与实验)
+- [Context, verification, and role evidence / 上下文、验证与角色证据](#context-verification-and-role-evidence--上下文验证与角色证据)
 - [Google Research, Nature, and arXiv: keep versions separate / Google Research、Nature 与 arXiv：分开版本](#google-research-nature-and-arxiv-keep-versions-separate--google-researchnature-与-arxiv分开版本)
 - [Topology-specific papers and repeated sampling / 特定拓扑论文与重复采样](#topology-specific-papers-and-repeated-sampling--特定拓扑论文与重复采样)
 - [Safe planning conclusions / 稳妥的规划结论](#safe-planning-conclusions--稳妥的规划结论)
@@ -46,6 +47,41 @@ For every entry, the date field reflects the cited page or version record—not 
 - **Access date / 查阅日期:** EN: 2026-10-30. 中文：2026-10-30。
 - **Exact supported claim / 来源明确支持的主张:** EN: The article reports scenario-specific vulnerability-search and game-building experiments. In the described vulnerability setup, Anthropic reports 266 findings from a coordinating swarm over 27 million tokens versus 21 findings from independent parallel agents over 6.5 million tokens; it notes roughly half of the swarm findings were outside the directories targeted by the independent agents. The article says the core-directory comparison was roughly comparable in tokens per vulnerability and reports poor game outputs in a separate simulation. 中文：文章报告了特定场景下的漏洞搜索与游戏开发实验。在所述漏洞实验中，Anthropic 报告协调 swarm 使用 2,700 万 tokens 得到 266 项结果，独立并行 agents 使用 650 万 tokens 得到 21 项结果；文章指出 swarm 结果中约一半位于独立 agents 搜索目标目录之外。文章称仅比较核心目录时，每项漏洞的 token 成本大致相当，并报告另一项模拟中的游戏产物质量较差。
 - **Does not establish / 来源不能证明:** EN: These vendor-described scenarios do not establish real-world failure rates or general superiority. The comparison differs in token spend and search scope; the page itself qualifies the comparison. It is not independent replication or an external audit. 中文：这些厂商所述场景不能证明现实世界失败率或普遍优势。对照组在 token 花费和搜索范围上不同；页面本身也对比较作了限定。该报告不是独立复现或外部审计。
+
+## Context, verification, and role evidence / 上下文、验证与角色证据
+
+### TACL — “Lost in the Middle: How Language Models Use Long Contexts” / TACL——“Lost in the Middle: How Language Models Use Long Contexts”
+
+- **Source / 来源:** [TACL 2024 paper](https://aclanthology.org/2024.tacl-1.9/).
+- **Scope / 范围:** EN: Tests how the position of relevant information in a long context affects retrieval/use. This is evidence about retrieval position, not a multi-agent coordination test or proof that long context alone causes instruction noncompliance. 中文：检验长上下文中相关信息的位置如何影响检索/使用。这是检索位置证据，不是多 Agent 协调测试，也不能证明仅因上下文较长就会不遵循指令。
+- **Access date / 查阅日期:** 2026-10-30. / 2026-10-30。
+
+### EACL Findings 2026 — VerIFY / EACL Findings 2026——VerIFY
+
+- **Source / 来源:** [VerIFY paper (PDF)](https://aclanthology.org/2026.findings-eacl.254.pdf).
+- **Scope / 范围:** EN: Evaluates verifiable instruction following with four models and 10-, 25-, and 50-turn settings. It is a bounded instruction-following benchmark, not a direct multi-agent coordination experiment. 中文：以 4 个模型及 10、25、50 轮设置评估可验证指令遵循。这是有范围的指令遵循基准，不是直接的多 Agent 协调实验。
+- **Access date / 查阅日期:** 2026-10-30. / 2026-10-30。
+
+### DeLM — shared verified context / DeLM——共享的经核实上下文
+
+- **Source / 来源:** Mao & Mirhoseini, [arXiv:2606.10662v1](https://arxiv.org/html/2606.10662v1), 2026-06-09; v1 preprint. / Mao 与 Mirhoseini，[arXiv:2606.10662v1](https://arxiv.org/html/2606.10662v1)，2026-06-09；v1 预印本。
+- **Scope / 范围:** EN: On a specific benchmark, DeLM uses a compact verified gist, a reference-grounded evidence map, and on-demand expansion. This supports the design option of a concise checked summary with retrievable evidence, while reminding designers that compression may lose qualifications. It may illustrate a centralized-passage communication/integration bottleneck risk; it does not prove every task should be decentralized or compare whether coordinators should execute. 中文：DeLM 在特定基准上采用紧凑的经核实 gist、以引用为依据的证据图及按需展开。这支持“简短核实摘要+可检索证据”这一设计选项，同时提示压缩可能丢失限定。它可用于说明集中通道可能形成沟通/整合瓶颈的设计风险，但不能证明所有任务都应去中心化，也没有比较协调者是否应亲自执行。
+- **Access date / 查阅日期:** 2026-10-30. / 2026-10-30。
+
+### Context Compaction Theory / 上下文压缩理论
+
+- **Source / 来源:** Tirmazi et al., [arXiv:2608.01326v1](https://arxiv.org/html/2608.01326v1), 2026-08-02; v1 preprint. / Tirmazi 等，[arXiv:2608.01326v1](https://arxiv.org/html/2608.01326v1)，2026-08-02；v1 预印本。
+- **Scope / 范围:** EN: Combines formal analysis with a specific set-membership experiment using one Claude compaction endpoint on 15,000 URLs. The reported example compresses about 500k tokens to about 14 kilobits, with query error around 0.505–0.555 versus 0.02 uncompressed. It illustrates information loss in that setup; it is not a universal summary-quality result or a multi-agent/multi-turn charter-following test. 中文：结合形式化分析与一个特定集合成员实验：在 15,000 个 URL 的任务上使用一个 Claude 压缩端点。报告的示例将约 500k tokens 压缩到约 14 kilobits，查询错误率约为 0.505–0.555，而未压缩时约为 0.02。它说明该设置下的信息损失，不是通用摘要质量结论，也不是多 Agent/多轮章程遵循测试。
+- **Access date / 查阅日期:** 2026-10-30. / 2026-10-30。
+
+### Coordinator and role evidence / 协调者与角色证据
+
+- **OpenAI SDK / OpenAI SDK:** The [Agents SDK multi-agent guide](https://openai.github.io/openai-agents-python/multi_agent/) calls this pattern “Agents as tools”: a manager agent keeps control and calls specialist agents through `Agent.as_tool()`. This implementation pattern includes strategy/integration work; it does not prescribe that a coordinator must never execute. / [Agents SDK 多 Agent 指南](https://openai.github.io/openai-agents-python/multi_agent/)将该模式称为“Agents as tools”：manager agent 保留控制权，并通过 `Agent.as_tool()` 调用 specialist Agent。该实现模式包含策略/整合工作，并未规定协调者永远不能执行。
+- **Anthropic lead / Anthropic lead:** The [multi-agent research system](https://www.anthropic.com/research/multi-agent-research-system) describes a lead that plans, delegates, and synthesizes research. It is a vendor system example, not a universal staffing rule. / [多 Agent 研究系统](https://www.anthropic.com/research/multi-agent-research-system)介绍负责规划、委派和综合研究的 lead。这是厂商系统示例，不是通用人员配置规则。
+- **Role and CEO prompts / 角色与 CEO 提示:** In Anthropic's [multiagent systems article](https://www.anthropic.com/research/multiagent-systems), the reported 12-hour game-building experiment found no clear effect from the role/CEO prompts it tested. Bound this observation to that experiment; it does not show role framing never matters. / Anthropic 的[多 Agent 系统文章](https://www.anthropic.com/research/multiagent-systems)报告，在其 12 小时游戏构建实验中，测试的角色/CEO 提示未显示明显影响。此观察仅限该实验，不能证明角色框架从不重要。
+- **ACL 2025 MLC / ACL 2025 MLC:** The [ACL 2025 paper](https://aclanthology.org/2025.acl-long.1105/) reports gains for MLC in its own framework across seven datasets. This does not establish a universal role effect or a causal rule for coordinator/executor separation. / [ACL 2025 论文](https://aclanthology.org/2025.acl-long.1105/)报告 MLC 在其自有框架、七个数据集上的收益。这不能证明普遍角色效应，也不能推出协调者与执行者分离的因果规则。
+
+These sources motivate bounded design recommendations rather than causal laws: keep current summaries concise, structured, up to date, and traceable to original evidence; retain expandable detail and qualifications; re-state goal, hard constraints, authorization, owners, dependencies, and stop conditions at phase changes. A coordinator remains accountable for the goal, plan, allocation, integration, and reporting, but may take a low-conflict work unit. Separate execution only when it becomes a bottleneck, interrupts integration, or compromises independent review. / 这些来源支持的是有边界的设计建议，而非因果定律：让当前摘要简短、结构化、及时更新并可回查到原始证据；保留可展开细节和限定；阶段切换时重申目标、硬约束、授权、负责人、依赖和停止条件。协调者仍对目标、计划、分工、整合和汇报负责，但可兼任低冲突工作单元。仅当执行形成瓶颈、打断整合或损害独立审查时才分离执行。
 
 ## Google Research, Nature, and arXiv: keep versions separate / Google Research、Nature 与 arXiv：分开版本
 
@@ -114,3 +150,9 @@ These are bounded planning recommendations, not universal empirical laws:
 - Compare a candidate multi-agent design with a capable single-agent baseline on the same task and budget; the OpenAI guide describes starting with a capable single-agent workflow, while the Google, Nature/arXiv, and Anthropic reports show results tied to specific tasks, models, and experimental setups ([OpenAI](https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/), [Google Research](https://research.google/blog/towards-a-science-of-scaling-agent-systems-when-and-why-agent-systems-work/), [Nature](https://www.nature.com/articles/s42256-026-01268-y), [Anthropic](https://www.anthropic.com/research/multiagent-systems)). / 将候选多 Agent 方案与同一任务、同一预算下有竞争力的单 Agent 基线比较；OpenAI 指南建议先建立有竞争力的单 Agent 流程，而 Google、Nature/arXiv 和 Anthropic 报告均显示结果受具体任务、模型和实验设置限制（[OpenAI](https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/)、[Google Research](https://research.google/blog/towards-a-science-of-scaling-agent-systems-when-and-why-agent-systems-work/)、[Nature](https://www.nature.com/articles/s42256-026-01268-y)、[Anthropic](https://www.anthropic.com/research/multiagent-systems)）。
 - Choose topology based on separable work, sequential dependencies, evidence/capability differences, shared-state needs, cost, and error consequences; distinguish DAG collaboration from repeated sampling/voting ([MacNet](https://arxiv.org/abs/2406.07155v3), [Agent Forest](https://arxiv.org/html/2402.05120v2)). / 根据工作可分离性、顺序依赖、证据/能力差异、共享状态需求、成本及错误后果选择拓扑；区分 DAG 协作与重复采样/投票（[MacNet](https://arxiv.org/abs/2406.07155v3)、[Agent Forest](https://arxiv.org/html/2402.05120v2)）。
 - Measure quality, coverage, time, monetary/token cost, coordination, conflict, and rework. Without a same-task, same-tool, same-budget comparison, recommend only a provisional configuration for the current task; do not claim universal optimal headcount, causal efficiency gains, or a general success rate. / 衡量质量、覆盖面、耗时、金钱/token 成本、协调、冲突和返工。没有同任务、同工具、同预算对照时，只提出适用于当前任务的暂定配置；不得声称存在通用最优人数、因果效率收益或普遍成功率。
+
+
+For practical use, treat the current-state card as an optional aid for multi-phase/shared work, not as a universal form. Preserve links to full instructions and evidence; original user instructions and applicable formal rules take precedence over a conflicting summary, and phase transitions or resumptions call for rereading those rules and instructions. Where a specific team charter defines stable primary responsibilities, honor it while allowing compatible roles to be combined and adding roles only for material value. A general-purpose Skill should map responsibilities flexibly to deliverables and dependencies rather than impose a fixed roster. / 实际使用时，当前状态卡仅是多阶段/共享工作的可选辅助，不是通用必填表单。保留完整指令和证据链接；摘要冲突时以用户原始指示和适用正式规则为准，阶段切换或重新接手时应重读这些规则和指令。若具体团队章程规定了稳定的主要职责，应予遵守，同时允许兼任，仅在增加角色有实质价值时才新增。通用 Skill 应按交付物和依赖灵活映射职责，而非强加固定岗位表。
+
+
+Terminology: The OpenAI Agents SDK officially calls the pattern “Agents as tools”; here the manager retains control while calling specialists through `Agent.as_tool()`. / 术语说明：OpenAI Agents SDK 官方将此模式称为“Agents as tools”；此模式下 manager 保留控制权，并通过 `Agent.as_tool()` 调用 specialist。
