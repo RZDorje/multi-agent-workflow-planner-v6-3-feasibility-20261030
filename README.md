@@ -1,6 +1,6 @@
 [简体中文](README.zh-CN.md)
 
-# Multi-Agent Workflow Planner v6.5
+# Multi-Agent Workflow Planner
 
 This bilingual Agent Skill helps an assistant plan proportionate single- or multi-agent workflows. v6.5 adds a concise, traceable current-state card for optional use in multi-phase/shared work; requires phase transitions and resumptions to refresh the state against original instructions and applicable rules; clarifies that the accountable coordinator may also handle a low-conflict work unit; and records bounded evidence about context, verification, coordination patterns, and role prompts. It provides instructions and references; it is not a platform integration and does not itself create agents, tools, permissions, background jobs, or runtime behavior.
 
