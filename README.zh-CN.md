@@ -17,11 +17,12 @@
 - `.github/skills/multi-agent-workflow-planner/references/research-claim-boundaries.md` — 关于 Agent 数量、拓扑、上下文、角色或协作效能主张的证据限制。
 - `.github/skills/multi-agent-workflow-planner/references/workflow-templates.md` — 可选的任务、工作单元、变更、交接和当前状态卡表单。
 - `.github/skills/multi-agent-workflow-planner/references/behavior-checks.md` — 可选的行为测试提示；提示不代表测试已运行。
-- `LICENSE-CHOICE-REQUIRED.txt` — 等待所有者决定的提示，不是许可证。
+- `LICENSE` — 仓库原创内容适用的 CC BY 4.0 许可证。
+- `THIRD-PARTY-NOTICES.md` — 不属于作者的材料范围排除说明。
 
 ## 后续安装或导入（仅为说明）
 
-1. Skill 文件位于 `.github/skills/multi-agent-workflow-planner/`。若所有者之后决定导入，请将其中的 `SKILL.md` 与相邻的 `references/` 目录放在一起，因为 Skill 使用相对链接。v6.5 双语候选曾被分配到一个探索性 Cue 筛查群；可见群记录未显示实际选择的软件包哈希或逐轮 Skill 激活情况。因此不能确认该包已加载，也不能据此判断运行时表现。README 和许可证提示保留在软件包根目录。
+1. Skill 文件位于 `.github/skills/multi-agent-workflow-planner/`。若所有者之后决定导入，请将其中的 `SKILL.md` 与相邻的 `references/` 目录放在一起，因为 Skill 使用相对链接。v6.5 双语候选曾被分配到一个探索性 Cue 筛查群；可见群记录未显示实际选择的软件包哈希或逐轮 Skill 激活情况。因此不能确认该包已加载，也不能据此判断运行时表现。README、LICENSE 和 THIRD-PARTY-NOTICES.md 保留在软件包根目录。
 2. 在 GitHub 文档说明的 Copilot 项目场景中，`.github/skills/multi-agent-workflow-planner/` 是一种文档所述的发现路径。导入步骤和支持的位置应以当前宿主的文档为准。[Agent Skills 格式规范](https://agentskills.io/specification)说明文件格式；[GitHub 添加 Copilot Agent Skills 指南](https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/add-skills)仅说明 GitHub 专属路径和 CLI 行为。GitHub 路径并非通用 Agent Skills 要求。
 3. 若之后导入，应确认当前宿主已加载该 Skill，且其相对参考链接均可访问。导入 Skill 不会赋予宿主新的功能或权限。
 
@@ -38,6 +39,6 @@
 
 Skill 仅提供指令和随附参考资料。每项任务都应核实当前宿主、账户、版本和权限。不得仅凭参考示例推断能力可用、资源共享或隔离、自动重试、后台运行或授权状态。
 
-## 许可证与发布门槛
+## 许可证与署名
 
-本仓库为公开仓库。v6.5 双语版位于 `main` 的 `.github/skills/multi-agent-workflow-planner/`，作为当前活动 Skill。本仓库尚未选择许可证；见 [`LICENSE-CHOICE-REQUIRED.txt`](LICENSE-CHOICE-REQUIRED.txt)，该文件不是许可证。本次不创建 Git 标签或 GitHub Release。仓库公开可见不等于授予使用、修改或再分发权利。
+本仓库中由 `i_dorje` 创作的原创内容依据 [CC BY 4.0](LICENSE) 授权，范围包括当前 v6.5 A 内容，以及仓库历史中保留的 v6.4/v6.3 内容。署名方式：`i_dorje`。第三方链接作品、引文或其他材料、商标，以及作者不拥有的其他内容均不在此许可范围内；详见 [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md)。本次变更不会创建 Git 标签或 GitHub Release。

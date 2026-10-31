@@ -17,11 +17,12 @@ The Skill focuses on deliverables, hard requirements, verified host capabilities
 - `.github/skills/multi-agent-workflow-planner/references/research-claim-boundaries.md` — evidence limits for claims about agent counts, topologies, context, roles, and collaboration effectiveness.
 - `.github/skills/multi-agent-workflow-planner/references/workflow-templates.md` — optional task, work-unit, change, handoff, and current-state-card forms.
 - `.github/skills/multi-agent-workflow-planner/references/behavior-checks.md` — optional behavior-test prompts; prompts are not evidence that tests were run.
-- `LICENSE-CHOICE-REQUIRED.txt` — pending decision notice, not a license.
+- `LICENSE` — CC BY 4.0 license for the author's original repository material.
+- `THIRD-PARTY-NOTICES.md` — scope exclusions for material not owned by the author.
 
 ## Future install or import (instructions only)
 
-1. The Skill files are in `.github/skills/multi-agent-workflow-planner/`. Keep its `SKILL.md` and adjacent `references/` directory together if an owner later chooses to import it, because it uses relative links. A v6.5 bilingual candidate was assigned to one exploratory Cue screen group; the visible group transcript did not show the selected package hash or per-turn Skill activation. This does not confirm that the package was loaded or establish runtime behavior. The README and license notice remain at the package root.
+1. The Skill files are in `.github/skills/multi-agent-workflow-planner/`. Keep its `SKILL.md` and adjacent `references/` directory together if an owner later chooses to import it, because it uses relative links. A v6.5 bilingual candidate was assigned to one exploratory Cue screen group; the visible group transcript did not show the selected package hash or per-turn Skill activation. This does not confirm that the package was loaded or establish runtime behavior. The README, LICENSE, and THIRD-PARTY-NOTICES.md remain at the package root.
 2. In the GitHub Copilot project context documented by GitHub, `.github/skills/multi-agent-workflow-planner/` is a documented discovery path. Follow the active host's documentation for import steps and supported locations. The [Agent Skills format specification](https://agentskills.io/specification) describes the file format, while [GitHub's guide to adding agent skills for Copilot](https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/add-skills) describes only GitHub-specific locations and CLI behavior. GitHub paths are not universal Agent Skills requirements.
 3. For any later import, confirm that the active host loaded the Skill and that its relative reference links resolve. Importing a Skill does not grant the host new features or permissions.
 
@@ -38,6 +39,6 @@ The Skill focuses on deliverables, hard requirements, verified host capabilities
 
 A Skill provides instructions and bundled references only. Check the active host, account, version, and permissions for each task. Do not infer availability, sharing, isolation, retries, background execution, or authorization merely from an example in a reference.
 
-## License and release gate
+## License and attribution
 
-This repository is public. The v6.5 bilingual package is the active Skill at `.github/skills/multi-agent-workflow-planner/` on `main`. No license has been selected; see [`LICENSE-CHOICE-REQUIRED.txt`](LICENSE-CHOICE-REQUIRED.txt), which is not a license. This change creates no Git tag or GitHub Release. Public visibility does not grant permission to use, modify, or redistribute the files.
+Original content authored by `i_dorje` in this repository is licensed under [CC BY 4.0](LICENSE). The grant covers the current v6.5 A material and retained v6.4/v6.3 material in the repository history. Attribution: `i_dorje`. Third-party linked works, quotations or other materials, trademarks, and any other content not owned by the author are excluded; see [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md). This change creates no Git tag or GitHub Release.
